@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(112, 111, 111);
+    margin: 50px;
+}
+
+.app{
+    background-color: rgb(248, 246, 250);
+    width: 100%;
+    text-align: center;
+    border-radius: 3px;
+    border-color: dimgray;
+    box-shadow: 1px 1px 40px 5px rgb(60 62 59);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+ul{
+    text-align: left;
+}
