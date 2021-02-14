@@ -1,4 +1,4 @@
-function getPersona()
+function getByGet()
 {
 
     fetch('/api/1/3')
@@ -26,3 +26,34 @@ function getPersona()
 
 }
 
+function getByPost()
+{
+
+   const formData ={
+                    "sinopharm" : "95.5%",
+                    "pfizer" : "98%",
+                    "sputnikV" : "97%",
+                    "moderna" : "65%",
+                    "astrazeneca" : "70%"
+                  };
+
+  fetch('/api/1/5?a=1&b=2&c=3',{
+    method : 'POST',
+    body : JSON.stringify(formData)
+  })
+  .then(response => response.json())
+  .catch(error => console.error('Error:', error))
+  .then(response => 
+    {
+
+        console.log('Success:', response);
+
+        const app = document.querySelector('#text');
+
+        app.innerHTML=JSON.stringify(response, undefined, 4);
+
+    }
+  );
+
+
+}

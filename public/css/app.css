@@ -17,3 +17,11 @@ body{
 ul{
     text-align: left;
 }
+
+textarea {
+    /* width: 80%; */
+    min-height: 18rem;
+    /* font-family: "Lucida Console", Monaco, monospace; */
+    /* font-size: 0.8rem; */
+    /* line-height: 1.2; */
+  }

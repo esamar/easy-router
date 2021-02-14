@@ -23,10 +23,19 @@
         </ul>
 
         <h2>Route response method GET</h2>
-        <button onclick='getPersona()'>method GET</button>
-        <ul id='lista'>
-        </ul>
+        <button onclick='getByGet()'>GET method</button>
+        
+        <ul id='lista'></ul>
 
+        <button onclick='getByPost()'>get params by POST method</button>
+
+        <br>
+        <br>
+
+        <textarea id="text" cols="30" rows="10"></textarea>
+
+        <br>
+        
         <a href='https://github.com/esamar'>https://github.com/esamar</a> :)  
         
     </div>
